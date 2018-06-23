@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700");
+* {
+    outline-width: 0;
+    font-family: 'Raleway' !important;
+}
+
+#pageContainer {
+    width: 100%;
+    height: 100vh;
+    background: url("https://wallpaperxyz.com/wp-content/uploads/Background-Images-HD-1080P-Nature-Free-Download-Wallpaperxyz.com-1.jpg") center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formContainer {
+    display: flex;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    height: 400px !important;
+    transition: 0.3s ease;
+    min-width: 492px;
+    max-width: 492px;
+}
+#formContainer.switch {
+    height: 368.4px;
+}
+
+#logo {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    width: 142px;
+    transition: 0.5s cubic-bezier(1, 0, 0, 1);
+}
+#logo img {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+}
+
+#forms {
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s cubic-bezier(1, 0, 0, 1);
+}
+#forms:before {
+    content: "";
+    background: url("https://source.unsplash.com/1920x1080/daily") center fixed;
+    background-size: cover;
+    position: absolute;
+    display: block;
+    width: 150%;
+    top: -20px;
+    left: -20px;
+    height: 150%;
+    box-shadow: inset 0 0 0 300px rgba(0, 0, 0, 0.5);
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+#forms form {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    box-sizing: border-box;
+    min-width: 350px;
+    transition: 0.3s ease;
+    height:400px !important;
+}
+#forms.forgot {
+    width: 0 !important;
+    flex-basis: 0 !important;
+}
+
+#whyReg {
+    position: absolute !important;
+    background: #fff;
+    z-index: 3 !important;
+    padding: 58px 0 59px 0 !important;
+    min-width: 0 !important;
+    width: 0 !important;
+    overflow: hidden;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.4);
+    transition-delay: 0.2s !important;
+}
+#whyReg h1 {
+    color: #444;
+}
+#whyReg ul {
+    padding: 0 15px;
+    margin: 0;
+}
+#whyReg ul li {
+    list-style: none;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#whyReg a {
+    color: #444;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 14px;
+}
+#whyReg .fadeUp {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+#whyReg.whyRegister {
+    min-width: 350px !important;
+    width: 350px !important;
+    padding: 105px 25px 90px 25px !important;
+    transition-delay: 0s !important;
+}
+#whyReg.whyRegister > .fadeUp {
+    top: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition-delay: 0.5s;
+}
+
+#forgot {
+    position: absolute !important;
+    background: #fff;
+    z-index: 3 !important;
+    padding: 58px 0 59px 0 !important;
+    min-width: 0 !important;
+    width: 0 !important;
+    overflow: hidden;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.4);
+    transition-delay: 0.2s !important;
+}
+#forgot .fadeUp {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+#forgot h1 {
+    color: #444;
+    font-size: 28px;
+}
+#forgot p {
+    color: #444;
+}
+#forgot input[type="email"] {
+    color: #444;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+#forgot input[type="email"]:focus {
+    box-shadow: inset 0 -2px 0 #444;
+}
+#forgot a {
+    color: #444;
+}
+#forgot.forgot {
+    min-width: 350px !important;
+    width: 350px !important;
+    padding: 60px 25px 61px 25px !important;
+    transition-delay: 0s !important;
+    height:400px !important;
+}
+#forgot.forgot > .fadeUp {
+    top: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition-delay: 0.5s;
+}
+
+#login {
+    position: relative;
+    left: 0;
+    transition-delay: 0.1s !important;
+}
+#login.switch {
+    left: -350px;
+    transition-delay: 0s !important;
+}
+
+#register {
+    position: absolute !important;
+    top: 0;
+    right: -350px;
+    transition-delay: 0s;
+}
+#register.switch {
+    right: 0;
+    transition-delay: 0.1s;
+}
+
+.formHead {
+    padding-bottom: 15px;
+    text-align: center;
+}
+.formHead h1 {
+    margin: 0;
+    color: #eee;
+    font-weight: 400;
+    font-size: 30px;
+}
+.formHead p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    opacity: .5;
+}
+
+.formDiv {
+    margin-bottom: 15px;
+}
+.formDiv input[type="text"], .formDiv input[type="email"], .formDiv input[type="password"] {
+    background: transparent;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.2s ease;
+}
+.formDiv input[type="text"]:focus, .formDiv input[type="email"]:focus, .formDiv input[type="password"]:focus {
+    box-shadow: inset 0 -2px 0 #fff;
+}
+.formDiv input[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    background: cadetblue;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.formDiv input[type="submit"]:hover {
+    background: #568e90;
+}
+
+.formOther {
+    display: flex;
+}
+.formOther a {
+    width: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    opacity: 0.5;
+    font-weight: 700;
+    text-align: center;
+    transition: 0.2s ease;
+}
+.formOther a:hover {
+    opacity: 1;
+}
