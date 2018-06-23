@@ -38,6 +38,7 @@ class User{
 
     }
 
+    
     public function activateAccount($email)
     {
         $query = "UPDATE users set email_verified = 1 WHERE email = '{$email}'";
